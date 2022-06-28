@@ -39,3 +39,11 @@ echo {a .z} {a..z} | tr  " " "\n" | grep  -v "oo"
 
 13, #!/bin/bash
 printf '%.2f\n'  $NUM
+
+14. printf '%x\n' $DECIMAL
+
+15. tr '[A-Za-z]' '[N-ZA-Mn-za-m]'
+
+16. paste - - | cut -f 1
+
+17. printf "%o\n" $((5#$(echo $WATER | tr 'water' '01234') + 5#$(echo $STIR | tr 'stir.' '01234'))) | tr '01234567' 'bestchol'
